@@ -1,11 +1,16 @@
 import React from "react";
 import "./TVDetails.css";
+import tv1 from "./assets/tv1.png";
+import tv2 from "./assets/tv2.png";
+import tv3 from "./assets/tv3.png";
+import tv4 from "./assets/tv4.png";
+import tv5 from "./assets/tv5.png";
 
 function TVDetails({ tvId, addToCart}) {
 
   const tvProducts = {
     1: {
-      image: "/src/assets/tv1.png",
+      image: "tv1.png",
       name: "32 Inch HD Smart LED TV",
       price: "Rs. 9,999.00",
       oldPrice: "Rs. 14,999.00",
@@ -15,7 +20,7 @@ function TVDetails({ tvId, addToCart}) {
     },
 
     2: {
-      image: "/src/assets/tv2.png",
+      image: "tv2.png",
       name: "EasyDeal 40 Inch Full HD Smart LED TV",
       price: "Rs. 14,999.00",
       oldPrice: "Rs. 22,999.00",
@@ -25,7 +30,7 @@ function TVDetails({ tvId, addToCart}) {
     },
 
     3: {
-      image: "/src/assets/tv3.png",
+      image: "tv3.png",
       name: "EasyDeal 43 Inch 4K Ultra HD Smart TV",
       price: "Rs. 19,999.00",
       oldPrice: "Rs. 32,999.00",
@@ -35,7 +40,7 @@ function TVDetails({ tvId, addToCart}) {
     },
 
     4: {
-      image: "/src/assets/tv4.png",
+      image: "tv4.png",
       name: "EasyDeal 50 Inch 4K Ultra HD Smart Google TV",
       price: "Rs. 27,999.00",
       oldPrice: "Rs. 49,999.00",
@@ -45,7 +50,7 @@ function TVDetails({ tvId, addToCart}) {
     },
 
     5: {
-      image: "/src/assets/tv5.png",
+      image: "tv5.png",
       name: "EasyDeal 55 Inch 4K Ultra HD Smart TV",
       price: "Rs. 34,999.00",
       oldPrice: "Rs. 69,999.00",
@@ -97,7 +102,7 @@ function TVDetails({ tvId, addToCart}) {
   className="add-cart"
   onClick={() =>
     addToCart({
-      id: tvId,
+      id: `tv-${tvId}`,
       name: tv.name,
       price: Number(tv.price.replace(/[^0-9]/g, "")),
       image: tv.image,
