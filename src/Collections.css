@@ -1,0 +1,170 @@
+.collections-page {
+  background: #f5f7fc;
+  min-height: 100vh;
+  color: #071b5c;
+}
+
+/* HERO */
+
+.collections-hero {
+  text-align: center;
+  padding: 75px 20px;
+  background: linear-gradient(135deg, #eef3ff, #ffffff);
+}
+
+.collections-hero p {
+  color: #4b70df;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.collections-hero h1 {
+  font-size: 52px;
+  margin: 10px 0;
+}
+
+.collections-hero span {
+  color: #667085;
+  font-size: 18px;
+}
+
+/* CONTAINER */
+
+.collections-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 25px;
+}
+
+.collections-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.collections-title h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.collections-title p {
+  color: #667085;
+  font-size: 17px;
+}
+
+/* GRID */
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* CARD */
+
+.collection-page-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+  transition: 0.3s ease;
+}
+
+.collection-page-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+
+.collection-page-image {
+  height: 260px;
+  background: #f8f9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.collection-page-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.collection-page-card:hover .collection-page-image img {
+  transform: scale(1.05);
+}
+
+/* INFO */
+
+.collection-page-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.collection-page-info h3 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.collection-page-info p {
+  color: #667085;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.collection-page-info button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #4b70df;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.collection-page-info button:hover {
+  background: #3158c5;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collections-hero h1 {
+    font-size: 42px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collections-container {
+    padding: 40px 15px;
+  }
+
+  .collections-hero {
+    padding: 55px 15px;
+  }
+
+  .collections-hero h1 {
+    font-size: 36px;
+  }
+
+  .collections-hero span {
+    font-size: 16px;
+  }
+}

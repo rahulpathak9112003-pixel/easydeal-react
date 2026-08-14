@@ -1,0 +1,149 @@
+.tv-details-page {
+  min-height: 70vh;
+  background: #f5f7fc;
+  padding: 70px 30px;
+}
+
+.tv-details-container {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.tv-details-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+}
+
+.tv-details-image img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 450px;
+  object-fit: contain;
+}
+
+.tv-details-info h1 {
+  color: #071b5c;
+  font-size: 38px;
+  line-height: 1.25;
+  margin: 15px 0 20px;
+}
+
+.tv-discount {
+  display: inline-block;
+  background: #ffe0dc;
+  color: #f04438;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.tv-rating {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.tv-rating span {
+  color: #667085;
+  font-size: 16px;
+}
+
+.tv-detail-price {
+  color: #071b5c;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.tv-old-price {
+  color: #777;
+  font-size: 18px;
+  text-decoration: line-through;
+  margin-bottom: 25px;
+}
+
+.tv-details-info p {
+  color: #5b6b85;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.tv-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.add-cart,
+.buy-now {
+  border: none;
+  padding: 16px 30px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.add-cart {
+  background: #071b5c;
+  color: white;
+}
+
+.add-cart:hover {
+  background: #102d82;
+}
+
+.buy-now {
+  background: #4b70df;
+  color: white;
+}
+
+.buy-now:hover {
+  background: #3158c5;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .tv-details-page {
+    padding: 30px 15px;
+  }
+
+  .tv-details-container {
+    grid-template-columns: 1fr;
+    padding: 25px;
+    gap: 30px;
+  }
+
+  .tv-details-image {
+    min-height: 300px;
+  }
+
+  .tv-details-info h1 {
+    font-size: 28px;
+  }
+
+  .tv-detail-price {
+    font-size: 30px;
+  }
+
+  .tv-actions {
+    flex-direction: column;
+  }
+
+  .add-cart,
+  .buy-now {
+    width: 100%;
+  }
+}
