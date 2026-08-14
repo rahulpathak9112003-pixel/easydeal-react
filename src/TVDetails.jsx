@@ -10,7 +10,7 @@ function TVDetails({ tvId, addToCart}) {
 
   const tvProducts = {
     1: {
-      image: "tv1.png",
+      image: tv1,
       name: "32 Inch HD Smart LED TV",
       price: "Rs. 9,999.00",
       oldPrice: "Rs. 14,999.00",
@@ -20,7 +20,7 @@ function TVDetails({ tvId, addToCart}) {
     },
 
     2: {
-      image: "tv2.png",
+      image: tv2,
       name: "EasyDeal 40 Inch Full HD Smart LED TV",
       price: "Rs. 14,999.00",
       oldPrice: "Rs. 22,999.00",
@@ -30,7 +30,7 @@ function TVDetails({ tvId, addToCart}) {
     },
 
     3: {
-      image: "tv3.png",
+      image: tv3,
       name: "EasyDeal 43 Inch 4K Ultra HD Smart TV",
       price: "Rs. 19,999.00",
       oldPrice: "Rs. 32,999.00",
@@ -40,7 +40,7 @@ function TVDetails({ tvId, addToCart}) {
     },
 
     4: {
-      image: "tv4.png",
+      image: tv4,
       name: "EasyDeal 50 Inch 4K Ultra HD Smart Google TV",
       price: "Rs. 27,999.00",
       oldPrice: "Rs. 49,999.00",
@@ -50,7 +50,7 @@ function TVDetails({ tvId, addToCart}) {
     },
 
     5: {
-      image: "tv5.png",
+      image: tv5,
       name: "EasyDeal 55 Inch 4K Ultra HD Smart TV",
       price: "Rs. 34,999.00",
       oldPrice: "Rs. 69,999.00",
