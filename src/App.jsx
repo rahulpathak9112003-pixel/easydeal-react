@@ -4,6 +4,26 @@ import "./App.css";
 import hero1 from "./assets/hero1.png";
 import hero2 from "./assets/hero2.png";
 import hero3 from "./assets/hero3.png";
+import electronics from "./assets/electronics.png";
+import fashion from "./assets/fashion.png";
+import kids from "./assets/kids.png";
+import kitchen from "./assets/kitchen.png";
+import home from "./assets/home.png";
+import sports from "./assets/sports.png";
+
+import tv1 from "./assets/tv1.png";
+import tv2 from "./assets/tv2.png";
+import tv3 from "./assets/tv3.png";
+import tv4 from "./assets/tv4.png";
+import tv5 from "./assets/tv5.png";
+
+import featured1 from "./assets/featured1.png";
+import featured2 from "./assets/featured2.png";
+import featured3 from "./assets/featured3.png";
+import featured4 from "./assets/featured4.png";
+
+
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
@@ -329,32 +349,32 @@ const addToCart = (product) => {
   <div className="collections">
 
     <div className="collection-card">
-      <img src="/src/assets/electronics.png" alt="Electronics" />
+      <img src={fashion} alt="Fashion & Beauty" />
       <h3>Electronics</h3>
     </div>
 
     <div className="collection-card">
-      <img src="/src/assets/fashion.png" alt="Fashion & Beauty" />
+      <img src={fashion} alt="Fashion & Beauty" />
       <h3>Fashion & Beauty</h3>
     </div>
 
     <div className="collection-card">
-      <img src="/src/assets/kids.png" alt="Kids & Toys" />
+      <img src={kids} alt="Kids & Toys" />
       <h3>Kids & Toys</h3>
     </div>
 
     <div className="collection-card">
-      <img src="/src/assets/kitchen.png" alt="Kitchen" />
+      <img src={kitchen} alt="Kitchen" />
       <h3>Kitchen</h3>
     </div>
 
     <div className="collection-card">
-      <img src="/src/assets/home.png" alt="Home" />
+      <img src={home} alt="Home" />
       <h3>Home</h3>
     </div>
 
     <div className="collection-card">
-      <img src="/src/assets/sports.png" alt="Sports" />
+      <img src={sports} alt="Sports" />
       <h3>Sports</h3>
     </div>
 
@@ -376,7 +396,7 @@ const addToCart = (product) => {
       </div>
 
       <div className="tv-image">
-        <img src="/src/assets/tv1.png" alt="32 Inch Smart TV" />
+        <img src={tv1} alt="32 Inch Smart TV" />
       </div>
 
       <h3>
@@ -417,7 +437,7 @@ const addToCart = (product) => {
       </div>
 
       <div className="tv-image">
-        <img src="/src/assets/tv2.png" alt="40 Inch Smart TV" />
+        <img src={tv2} alt="40 Inch Smart TV" />
       </div>
 
       <h3>
@@ -457,7 +477,7 @@ const addToCart = (product) => {
       </div>
 
       <div className="tv-image">
-        <img src="/src/assets/tv3.png" alt="43 Inch Smart TV" />
+        <img src={tv3} alt="43 Inch Smart TV" />
       </div>
 
       <h3>
@@ -497,7 +517,7 @@ const addToCart = (product) => {
       </div>
 
       <div className="tv-image">
-        <img src="/src/assets/tv4.png" alt="50 Inch Smart TV" />
+        <img src={tv4} alt="50 Inch Smart TV" />
       </div>
 
       <h3>
@@ -537,7 +557,7 @@ const addToCart = (product) => {
       </div>
 
       <div className="tv-image">
-        <img src="/src/assets/tv5.png" alt="55 Inch Smart TV" />
+        <img src={tv5} alt="55 Inch Smart TV" />
       </div>
 
       <h3>
@@ -588,10 +608,7 @@ const addToCart = (product) => {
     <div className="featured-card">
 
       <div className="featured-image">
-        <img
-          src="/src/assets/featured1.png"
-          alt="Wireless Headphones"
-        />
+        <img src={featured1} alt="Wireless Headphones" />
       </div>
 
       <div className="featured-info">
@@ -617,7 +634,7 @@ const addToCart = (product) => {
       id: 1,
       name: "Wireless Bluetooth Headphones",
       price: 1499,
-      image: "/src/assets/featured1.png",
+      image: featured1,
     })
   }
 >
@@ -634,7 +651,7 @@ const addToCart = (product) => {
 
       <div className="featured-image">
         <img
-          src="/src/assets/featured2.png"
+          src={featured2}
           alt="Smart Watch"
         />
       </div>
@@ -661,7 +678,7 @@ const addToCart = (product) => {
     id: 2,
     name: "Smart Watch Series 8",
     price: 2499,
-    image: "/src/assets/featured2.png",
+    image: featured2,
   })
 }
         >
@@ -677,10 +694,7 @@ const addToCart = (product) => {
     <div className="featured-card">
 
       <div className="featured-image">
-        <img
-          src="/src/assets/featured3.png"
-          alt="Kitchen Set"
-        />
+      <img src={featured3} alt="Kitchen Set" />
       </div>
 
       <div className="featured-info">
@@ -705,7 +719,7 @@ const addToCart = (product) => {
     id: 3,
     name: "Premium Kitchen Storage Set",
     price: 999,
-    image: "/src/assets/featured3.png",
+    image: featured3,
   })
 }
         >
@@ -722,7 +736,7 @@ const addToCart = (product) => {
 
       <div className="featured-image">
         <img
-          src="/src/assets/featured4.png"
+          src={featured4}
           alt="Running Shoes"
         />
       </div>
@@ -749,7 +763,7 @@ const addToCart = (product) => {
     id: 4,
     name: "Premium Running Shoes",
     price: 1999,
-    image: "/src/assets/featured4.png",
+    image: featured4,
   })
 }
         >
